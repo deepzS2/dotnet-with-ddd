@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RestWithDDD.Application\RestWithDDD.Application.csproj" />
+    <ProjectReference Include="..\RestWithDDD.Domain.Core\RestWithDDD.Domain.Core.csproj" />
+    <ProjectReference Include="..\RestWithDDD.Domain.Service\RestWithDDD.Domain.Services.csproj" />
+    <ProjectReference Include="..\RestWithDDD.Domain\RestWithDDD.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
